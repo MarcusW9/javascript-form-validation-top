@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form novalidate>
+        <ul>
+            <li>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required></input>
+                <span class="error"></span>
+            </li>
+            <li>
+                <label for="country">Country</label>
+                <input id="country" name="country" type="text" required maxlength="40"></input>
+                <span class="error"></span>
+            </li>
+            <li>
+                <label for="postcode">Postcode</label>
+                <input id="postcode" name="postcode" type="text" required pattern="^[A-Za-z]{1,2}\d[A-Za-z\d]? ?\d[A-Za-z]{2}$"></input>
+                <span class="error"></span>
+            </li>
+            <li>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required></input>
+                <span class="error"></span>
+            </li>
+            <li>
+                <label for="password-confirm">Confirm Password</label>
+                <input id="password-confirm" name="password-confirm" type="password" required></input>
+                <span class="error"></span>
+            </li>   
+            <li>
+                <button>Submit</button>
+            </li> 
+        </ul>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

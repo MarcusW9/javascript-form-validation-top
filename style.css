@@ -1,0 +1,53 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+input:invalid {
+    border-color: red;
+    border-radius: 4px;
+}
+
+input:invalid:focus {
+    border-color: none;
+}
+
+li * {
+    display: block;
+    width: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    margin-top: 20px;
+}
